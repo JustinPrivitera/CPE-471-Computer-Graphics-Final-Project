@@ -1,2 +1,3 @@
 # Ignore debug information
 **/Debug
+**/.vs
