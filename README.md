@@ -3,6 +3,7 @@ Final Graphics project for CPE 471, completed in Fall 2019.
 
 ## Solar System Simulation
 By Justin Privitera
+
 Contact at jprivite@calpoly.edu
 
 ![Earth](images/earth.png)
@@ -17,7 +18,7 @@ My goal for this project was to create a somewhat-realistic simulation of our so
 * Accurate rotation periods
 * Accurate object sizes
 * Atmospheres for Earth and Venus
-* Day/night cycle for Earth with linear interpolation between nighttime and daytime textures.
+* Day/night cycle for Earth with linear interpolation between nighttime and daytime textures
 * An appropriate skybox
 * Comets
 * Asteroid Belt
@@ -71,7 +72,7 @@ Some of the controls have two functions. "l" and "p" toggle between the first an
 * number keys = object selection
 
 ### Screenshots
-![Jupiter_w_moons](images/screenshot.png)
+![Jupiter_w_moons](images/Jupiter_w_moons.png)
 Jupiter and moons
 ![the_planets](images/the_planets.png)
 The Planets
