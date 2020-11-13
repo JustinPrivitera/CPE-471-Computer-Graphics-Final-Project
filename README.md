@@ -35,7 +35,7 @@ Notes:
 * The orbits and sizes of some moons had to be scaled up once everything else was scaled down so they would be visible.
 * There are no axial tilts; otherwise, all planets and moons are accurately scaled, aside from those affected by the previous bullet point.
 * For camera object tracking, I have selected 10 objects that I find the most interesting; these can be selected with the number keys. These are the objects each number maps to:
-1. Venus
+0. Venus
 2. Earth
 3. Mars
 4. Jupiter
