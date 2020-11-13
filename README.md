@@ -29,7 +29,7 @@ My goal for this project was to create a somewhat-realistic simulation of our so
 * Real-time shadowing
 
 Notes:
-* This project was my first significant foray into computer graphics. As such, much of the code and logic is simplistic, however, the end result is something I'm still quite proud of.
+* This project was my first significant foray into both computer graphics and C++. As such, much of the code and logic is simplistic, however, the end result is something I'm still quite proud of.
 * This project should run on windows and linux, and can be built using cmake. A run script is included.
 * All sizes and distances are scaled down to make the project more visually appealing.
 * The orbits and sizes of some moons had to be scaled up once everything else was scaled down so they would be visible.
