@@ -781,7 +781,7 @@ public:
 				glUniform1f(prog->getUniform("radius"), scale_factor);
 				glUniform3fv(prog->getUniform("center"), 1, &location[0]);
 			}
-			sphere->draw(prog, FALSE);
+			sphere->draw(prog, false);
 
 			scale_factor *= 1.01625;
 			mat4 S = scale(mat4(1), scale_factor * vec3(1, 1, 1));
@@ -790,10 +790,10 @@ public:
 			glUniform1i(prog->getUniform("isClouds"), 1);
 			glEnable(GL_BLEND);
 			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-			sphere->draw(prog, FALSE);
+			sphere->draw(prog, false);
 		}
 		else
-			sphere->draw(prog, FALSE);
+			sphere->draw(prog, false);
 		return T; // axial tilt ruins the way shadows are made by moons
 	}
 
@@ -817,7 +817,7 @@ public:
 		glUniform1i(prog->getUniform("isClouds"), 0); // for rings
 		if (rings == 1)
 		{
-			sphere->draw(prog, FALSE);
+			sphere->draw(prog, false);
 			scale_factor *= SATURN_RING_SCALE_FACTOR * 2;
 			mat4 S = scale(mat4(1), scale_factor * vec3(1, 1, 1));
 			M = Mp * T * Rx * S;
@@ -825,10 +825,10 @@ public:
 			glUniform1i(prog->getUniform("isClouds"), 1); // for rings
 			glEnable(GL_BLEND);
 			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-			square->draw(prog, FALSE);
+			square->draw(prog, false);
 		}
 		else
-			sphere->draw(prog, FALSE);
+			sphere->draw(prog, false);
 		return T;
 	}
 
@@ -851,7 +851,7 @@ public:
 		mat4 M = Mp * T * Rr * Rx * Ry * Rz * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glUniform1i(prog->getUniform("object_index"), object_index);
-		asteroid_round->draw(prog, FALSE);
+		asteroid_round->draw(prog, false);
 		return T;
 	}
 
@@ -865,7 +865,7 @@ public:
 		mat4 M = Ry * Rx * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glUniform1i(prog->getUniform("object_index"), SUN_IND);
-		sphere->draw(prog, FALSE);
+		sphere->draw(prog, false);
 	}
 
 	void render_space() // sky sphere
@@ -877,7 +877,7 @@ public:
 		mat4 M = T * Rx * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glUniform1i(prog->getUniform("object_index"), SPACE_IND);
-		sphere->draw(prog, FALSE);
+		sphere->draw(prog, false);
 		glEnable(GL_DEPTH_TEST);
 	}
 
@@ -890,7 +890,7 @@ public:
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		//glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		square->draw(prog, FALSE);
+		square->draw(prog, false);
 	}
 
 	int render_optimized_belt(int num)
@@ -922,7 +922,7 @@ public:
 			mat4 T = translate(mat4(1), location);
 			mat4 M = T * Rrx * Rry * Rrz * Rx * Ry * Rz * S;
 			glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
-			asteroid_round->draw(prog, FALSE);
+			asteroid_round->draw(prog, false);
 			j += 9;
 		}
 		return f;
@@ -944,7 +944,7 @@ public:
 		mat4 M = T * Rr * Rx * Ry * Rz * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glUniform1i(prog->getUniform("isClouds"), 0); // for shape
-		asteroid_round->draw(prog, FALSE);
+		asteroid_round->draw(prog, false);
 		S = scale(mat4(1), scale_factor * 15 * vec3(1, 1, 1));
 		float angle = COMET_ORBITAL_SPEED * (glfwGetTime() * speed_scale + alpha);
 		Rr = rotate(mat4(1), angle, vec3(0, 1, 0));
@@ -952,22 +952,22 @@ public:
 		glUniform1i(prog->getUniform("isClouds"), 1); // for trail
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glUniform3fv(prog->getUniform("center"), 1, &location[0]);
-		square->draw(prog, FALSE);
+		square->draw(prog, false);
 
 		Rx = rotate(mat4(1), PI / 2, vec3(1, 0, 0));
 		M = T * Rr * Rx * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
-		square->draw(prog, FALSE);
+		square->draw(prog, false);
 
 		Rx = rotate(mat4(1), PI / 4, vec3(1, 0, 0));
 		M = T * Rr * Rx * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
-		square->draw(prog, FALSE);
+		square->draw(prog, false);
 
 		Rx = rotate(mat4(1), -PI / 4, vec3(1, 0, 0));
 		M = T * Rr * Rx * S;
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
-		square->draw(prog, FALSE);
+		square->draw(prog, false);
 	}
 
 	vec3 rand_gen(int i)

@@ -17,7 +17,7 @@ void Shape::loadMesh(const string &meshName, string *mtlpath, unsigned char *(lo
 	vector<tinyobj::shape_t> shapes;
 	vector<tinyobj::material_t> objMaterials;
 	string errStr;
-	bool rc = FALSE;
+	bool rc = 0;
 	if (mtlpath)
 		rc = tinyobj::LoadObj(shapes, objMaterials, errStr, meshName.c_str(), mtlpath->c_str());
 	else
@@ -209,7 +209,7 @@ void Shape::init()
 		assert(glGetError() == GL_NO_ERROR);
 	}
 }
-void Shape::draw(const shared_ptr<Program> prog,bool use_extern_texures) const
+void Shape::draw(const shared_ptr<Program> prog, bool use_extern_texures) const
 {
 	for (int i = 0; i < obj_count; i++)
 
