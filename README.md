@@ -1,14 +1,14 @@
-# CPE-471-Computer-Graphics-Final-Project
-Final Graphics project for CPE 471, completed in Fall 2019.
 
-## Solar System Simulation
+# Solar System Visualization
 By Justin Privitera
 
 Contact at jprivite@calpoly.edu
 
+Final Graphics project for CPE 471, completed in Fall 2019.
+
 ![Earth](images/earth.png)
 
-### Overview
+## Overview
 My goal for this project was to create a somewhat-realistic simulation of our solar system. The following is a list of implemented features:
 
 * Sun
@@ -46,7 +46,7 @@ Notes:
 9. Titan
 10. Comet
 
-### Controls
+## Controls
 Some of the controls have two functions. "l" and "p" toggle between the first and second. The controls use the first function by default.
 
 * w = move forward/decrease radius
@@ -71,7 +71,7 @@ Some of the controls have two functions. "l" and "p" toggle between the first an
 * v = toggle orbit visualization
 * number keys = object selection
 
-### Screenshots
+## Screenshots
 ![Jupiter_w_moons](images/Jupiter_w_moons.png)
 Jupiter and moons
 ![the_planets](images/the_planets.png)
