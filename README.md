@@ -9,7 +9,7 @@ Final Graphics project for CPE 471, completed in Fall 2019.
 ![Earth](images/earth.png)
 
 ## Overview
-My goal for this project was to create a somewhat-realistic simulation of our solar system. The following is a list of implemented features:
+My goal for this project was to create a somewhat-realistic visualization of our solar system. The following is a list of implemented features:
 
 * Sun
 * All 8 Planets
