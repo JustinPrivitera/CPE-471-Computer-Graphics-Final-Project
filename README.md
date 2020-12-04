@@ -72,25 +72,47 @@ Some of the controls have two functions. "l" and "p" toggle between the first an
 * number keys = object selection
 
 ## Screenshots
+
 ![Jupiter_w_moons](images/Jupiter_w_moons.png)
+
 Jupiter and moons
+
 ![the_planets](images/the_planets.png)
+
 The Planets
+
 ![mars_moon](images/mars_moon.png)
+
 Mars and one of its moons, Phobos
+
 ![day_night_cycle](images/day_night_cycle.png)
+
 Earth's Day/Night Cycle
+
 ![earth_atmosphere](images/earth_atmosphere.png)
+
 Earth's Atmosphere
+
 ![venus_atmosphere](images/venus_atmosphere.png)
+
 Venus's Atmosphere
+
 ![orbit_visualization](images/orbit_visualization.png)
+
 Orbit Visualization Tool
+
 ![asteroid_belt](images/asteroid_belt.png)
+
 The Asteroid Belt
+
 ![comet](images/comet.png)
+
 The comet
+
 ![saturn_shadowing](images/saturn_shadowing.png)
+
 Saturn leaving a shadow on its rings
+
 ![moon_shadow](images/moon_shadow.png)
+
 The Moon leaving a real time shadow on Earth
